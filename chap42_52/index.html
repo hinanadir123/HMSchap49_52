@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up form</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      form {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 5px 0;
+        display: block;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+      }
+
+      #output {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Form Data</h3>
+    <form id="signupform">
+      <input type="text" id="name" placeholder="Enter your name" /><br />
+      <input type="email" id="email" placeholder="enter your Email" /><br />
+      <input type="password" id="password" placeholder="Enter your password" />
+      <br />
+      <button type="submit">Signup form</button>
+    </form>
+    <div id="output"></div>
+
+
+    
+    <h3>Product details</h3>
+    <div class="content">
+        <p><strong>Product name:</strong>Stylish chair</p>
+        <p><strong> Price: </strong>$99</p>
+      <p>
+        <span>Acomfortable and portable chair available at store</span>
+        <span>Made with high quaility wood and sofa cusion</span>
+        <button onclick="toggle()" id="raed">Read More</button>
+      </p>
+    </div>
+
+
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       Tenetur, error. Ratione hic iste quam voluptatem laboriosam 
+       officiis enim molestiae, aliquid, officia obcaecati 
+       eos perspiciatis iure asperiores nihil temporibus fugit magnam.
+       eos perspiciatis iure asperiores nihil temporibus fugit magnam.
+
+    </p>
+    <button onclick="extend()">See Moore</button>
+
+    <h1> Student Details</h1>
+    <form id="studentform">
+      <input type="text" id="name" placeholder="Enter name" required>
+      <input type="text" id="age" placeholder="Enter Age" required>
+      <input type="text" id="grade" placeholder="Grade" required>
+      <br>
+      <button type="submit">Add student</button>
+    
+    </form>
+  <table border="1" id="student_table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+
+  </table>
+  <script></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
